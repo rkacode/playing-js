@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Sample Project</title>
+    <!-- data-main attribute tells require.js to load
+    js/main.js after require.js loads. -->
+    <script src="js/lib/require.js"></script>
+    <script>
+        require( ["js/common"], function () {
+            require( ["pages/index"] );
+        });
+    </script>
+</head>
+<body>
+    <h1 title="Sample Project">My Sample Project</h1>
+
+    <div>
+        <h1 data-bind="text: header"></h1>
+    </div>
+
+    <div>
+        <h1 id="header"></h1>
+    </div>
+</body>
+</html>
